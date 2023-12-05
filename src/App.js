@@ -1,17 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import image1 from './webdesign.png'
+import image1 from './assets/images/webdesign.png'
 import Navbar from './Navbar';
-
+import Button from '@mui/material/Button';
+import Hero from './Hero'
 function App() {
   return (
     <div className="App">
-      <div style={{backgroundImage:"url(/homeopen-banner-img.jpg)" , backgroundSize:"cover",width:"100vw",height:"75vh"}}>
-       <Navbar/>
+      <Navbar />
+    <Hero/>
+    <div>
 
-       
-       </div>
     </div>
+      
+    </div >
   );
 }
 
