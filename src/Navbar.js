@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import Menu from './assets/images/homeopen-banner-img.jpg'
+import Menu from './assets/images/webdesign.png';
 import { Typography } from "@mui/material";
 import open from './assets/images/webdesign.png';
 import './Nav.css'
@@ -46,7 +46,11 @@ const Navbar = () => {
   
 
 //   const navigate = useNavigate();
+const [showNavbar, setShowNavbar] = useState(false)
 
+const handleShowNavbar = () => {
+  setShowNavbar(!showNavbar)
+}
 
 
   return (
@@ -55,14 +59,16 @@ const Navbar = () => {
       <div className="container">
         <div className="logocenter">
         <div onClick={()=>{setShow(!show)
-        console.log("hehe");
         }} className="logo" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>         
           
         <img src={open} style={{ width: 100, height: 100 }} />
         </div>
         </div>
+        <div className="menu-icon" onClick={handleShowNavbar}>
+        <img src={Menu} style={{ width: 55, height: 55 }} />
+        </div>
        
-        <div className={`nav-elements  ${'active'}`}>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul style={{alignItems:'center'}}>
          
             <li>
