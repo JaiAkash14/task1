@@ -5,12 +5,15 @@ import Navbar from './Navbar';
 import Button from '@mui/material/Button';
 import Hero from './Hero';
 import Landing from './Landing';
+
+import Body from './Body';
 function App() {
   return (
     <div className="App" style={{height:2000}}>
       <Navbar />
     <Hero/>
    <Landing/>
+   <Body/>
       
     </div >
   );

@@ -17,7 +17,8 @@
     "@emotion/styled": "^11.11.0",
     "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.11.16",
-    "@mui/joy": "^5.0.0-alpha.85"
+    "@mui/joy": "^5.0.0-alpha.85",
+    "framer-motion": "^1.11.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,8 @@
 import zIndex from "@mui/material/styles/zIndex"
-
+import { motion } from 'framer-motion';
 import Button from '@mui/material/Button';
 import shadows from "@mui/material/styles/shadows"
+import { Scale } from "@mui/icons-material";
 function Landing() {
     return (
         <div>
@@ -21,10 +22,11 @@ function Landing() {
 
                 <div style={{ height: '2px', backgroundColor: 'red', width: '150px', zIndex: 20 }} />
                 <p style={{ color: 'red', marginTop: '22px', zIndex: 20, marginLeft: 20, marginRight: 20 }}>OPEN SOLUTIONS</p>
-                <div style={{ height: '2px', backgroundColor: 'red', width: '150px', zIndex: 20 }} />
+                <div style={{
+                    height: '2px', backgroundColor: 'red', width: '150px', zIndex: 20, }} />
 
             </div>
-            <div style={{ flexDirection: 'row', display: 'flex', marginTop: 42 ,justifyContent:"space-between"}}>
+            <div style={{ flexDirection: 'row', display: 'flex', marginTop: 42, justifyContent: "space-between" }}>
                 <div style={{ width: '30%', justifyContent: 'center', alignItems: 'center', marginLeft: 122, }}>
                     <p style={{ color: 'red', fontSize: '50px', textAlign: 'left', margin: 0 }}>Re-Create</p>
                     <h1 style={{ fontSize: '30px', textAlign: 'left', margin: 0 }}>Digital<span style={{ fontWeight: 400 }}> Mediums are no</span> <br /><span style={{ fontWeight: 400 }}>more a</span> luxury.</h1>
@@ -32,16 +34,16 @@ function Landing() {
                         Is your Brand Strategically placed well positioned ?</p>
                     <p style={{ textAlign: 'left' }}>It is a necessity for every business to battle its rivalries. There are a number of platforms to achieve their goals. But its important to choose what works for you. Talk to us; we might work for you.</p>
                     <Button variant="contained" disableElevation={true} sx={{
-                        width:222,
-                        letterSpacing:'3px',
-                        backgroundColor: 'red', 
+                        width: 222,
+                        letterSpacing: '3px',
+                        backgroundColor: 'red',
                         color: 'white',
                         borderRadius: '130px',
                         border: '5px solid red',
                         textAlign: 'left',
-                        marginRight:'200px',
-                        marginTop:'12px',
-                        
+                        marginRight: '200px',
+                        marginTop: '12px',
+
                         '&:hover': {
                             backgroundColor: '#3f3f3f',
                             color: '#fff',
@@ -49,10 +51,10 @@ function Landing() {
                         }
                     }} > TALK TO US</Button>
                 </div>
-                <div style={{ width:'70%', justifyContent: 'center', alignItems: 'center',backgroundImage: "url(/bg-new.png)",backgroundSize:'contain',backgroundRepeat:'no-repeat', }}>
+                <div style={{ width: '70%', justifyContent: 'center', alignItems: 'center', backgroundImage: "url(/bg-new.png)", backgroundSize: 'contain', backgroundRepeat: 'no-repeat', }}>
                 </div>
 
-                
+
             </div>
 
         </div >
