@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Button from '@mui/material/Button';
 import shadows from "@mui/material/styles/shadows"
 import { Scale } from "@mui/icons-material";
+import limage1 from './assets/images/bg-new.png'
 function Landing() {
     return (
         <div>
@@ -51,7 +52,9 @@ function Landing() {
                         }
                     }} > TALK TO US</Button>
                 </div>
-                <div style={{ width: '70%', justifyContent: 'center', alignItems: 'center', backgroundImage: "url(/bg-new.png)", backgroundSize: 'contain', backgroundRepeat: 'no-repeat', }}>
+                <div style={{ width: '70%', justifyContent: 'center', alignItems: 'center', }}>
+                   <img src={limage1}></img> 
+                   
                 </div>
 
 

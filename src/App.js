@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Button from '@mui/material/Button';
 import Hero from './Hero';
 import Landing from './Landing';
-
+import Footer from'./Footer';
 import Body from './Body';
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <Navbar />
     <Hero/>
    <Landing/>
-   <Body/>
+<Body/>
+<Footer/>
       
     </div >
   );
