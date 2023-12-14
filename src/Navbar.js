@@ -61,10 +61,10 @@ const handleShowNavbar = () => {
         <div onClick={()=>{setShow(!show)
         }} className="logo" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>         
           
-        <img src={open} style={{ width: 100, height: 100 }} />
+        <img src={open} style={{ width: 100, height: 100}} />
         </div>
         </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
+        <div className="menu-icon" onClick={handleShowNavbar} >
         <img src={Menu} style={{ width: 55, height: 55 }} />
         </div>
        

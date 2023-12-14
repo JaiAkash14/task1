@@ -6,7 +6,7 @@ import { Scale } from "@mui/icons-material";
 import limage1 from './assets/images/bg-new.png'
 function Landing() {
     return (
-        <div>
+        <div> 
             <div style={{ justifyContent: 'center', alignItems: 'center', marginTop: 85 }}>
                 <p style={{ fontSize: '26px', color: 'red', margin: 0 }}>BE OPEN</p>
                 <h1 style={{ fontSize: '66px', fontWeight: 700, margin: 0 }}>We Live In the Details</h1>

@@ -3,10 +3,12 @@ import './App.css';
 import image1 from './assets/images/webdesign.png'
 import Navbar from './Navbar';
 import Button from '@mui/material/Button';
-
+import { useNavigate } from 'react-router-dom';
+import Ourwork from './Ourwork';
 
 
 function Hero() {
+    const navigate = useNavigate()
     return (
 
 
@@ -29,7 +31,7 @@ function Hero() {
                         borderColor: 'transparent'
                     }
                 }} > Download Brochure</Button>
-                <Button variant="contained" disableElevation={true} sx={{
+                <Button onClick={() => navigate('our-work')} variant="contained" disableElevation={true} sx={{
                     width: 280,
                     lineHeight: '45px',
                     backgroundColor: 'red',
@@ -49,6 +51,7 @@ function Hero() {
         </div>
     )
 }
+
 
 
 export default Hero

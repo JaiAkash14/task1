@@ -1,22 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
-import image1 from './assets/images/webdesign.png'
-import Navbar from './Navbar';
-import Button from '@mui/material/Button';
-import Hero from './Hero';
-import Landing from './Landing';
-import Footer from'./Footer';
-import Body from './Body';
+
+import Login from './Login';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Ourwork from './Ourwork';
 function App() {
   return (
-    <div className="App" style={{height:2000}}>
-      <Navbar />
-    <Hero/>
-   <Landing/>
-<Body/>
-<Footer/>
+  
       
-    </div >
+<BrowserRouter>
+<Routes>
+<Route path='/' element={<Login/>}/>
+<Route path='our-work' element={<Ourwork/>} />
+
+   
+</Routes>
+</BrowserRouter>
+
+  
+
+
+   
   );
 }
 
